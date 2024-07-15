@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ReEmuraRuntime", "ReEmura\ReEmuraRuntime.vcxproj", "{BACED34F-A69C-C755-8F30-387C7B9DA3BA}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ReEmura_ERBParser", "ReEmura_ERBParser\ReEmura_ERBParser.vcxproj", "{7B0E4F56-E724-4DEC-309C-D80D9CF11D74}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Dist|x64 = Dist|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BACED34F-A69C-C755-8F30-387C7B9DA3BA}.Debug|x64.ActiveCfg = Debug|x64
+		{BACED34F-A69C-C755-8F30-387C7B9DA3BA}.Debug|x64.Build.0 = Debug|x64
+		{BACED34F-A69C-C755-8F30-387C7B9DA3BA}.Dist|x64.ActiveCfg = Dist|x64
+		{BACED34F-A69C-C755-8F30-387C7B9DA3BA}.Dist|x64.Build.0 = Dist|x64
+		{BACED34F-A69C-C755-8F30-387C7B9DA3BA}.Release|x64.ActiveCfg = Release|x64
+		{BACED34F-A69C-C755-8F30-387C7B9DA3BA}.Release|x64.Build.0 = Release|x64
+		{7B0E4F56-E724-4DEC-309C-D80D9CF11D74}.Debug|x64.ActiveCfg = Debug|x64
+		{7B0E4F56-E724-4DEC-309C-D80D9CF11D74}.Debug|x64.Build.0 = Debug|x64
+		{7B0E4F56-E724-4DEC-309C-D80D9CF11D74}.Dist|x64.ActiveCfg = Dist|x64
+		{7B0E4F56-E724-4DEC-309C-D80D9CF11D74}.Dist|x64.Build.0 = Dist|x64
+		{7B0E4F56-E724-4DEC-309C-D80D9CF11D74}.Release|x64.ActiveCfg = Release|x64
+		{7B0E4F56-E724-4DEC-309C-D80D9CF11D74}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
