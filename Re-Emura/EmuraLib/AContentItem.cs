@@ -1,0 +1,4 @@
+﻿namespace MinorShift.Emuera.Content
+{
+
+}
