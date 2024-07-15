@@ -1,0 +1,154 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <OutputType>WinExe</OutputType>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImportWindowsDesktopTargets>true</ImportWindowsDesktopTargets>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Update="ColorBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="EraPictureBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="HiNetCloud.Interop.WMPLib" Version="20.7.2.10" />
+    <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
+    <PackageReference Include="NAudio" Version="2.2.1" />
+    <PackageReference Include="NAudio.Vorbis" Version="1.5.0" />
+    <PackageReference Include="NAudio.WaveFormRenderer" Version="2.0.0" />
+    <PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Config\Config.cs" />
+    <Compile Remove="Config\ConfigCode.cs" />
+    <Compile Remove="Config\ConfigData.cs" />
+    <Compile Remove="Config\ConfigItem.cs" />
+    <Compile Remove="Config\KeyMacro.cs" />
+    <Compile Remove="Content\AContentFile.cs" />
+    <Compile Remove="Content\AContentItem.cs" />
+    <Compile Remove="Content\AppContents.cs" />
+    <Compile Remove="Content\ConstImage.cs" />
+    <Compile Remove="Content\CroppedImage.cs" />
+    <Compile Remove="Content\GraphicsImage.cs" />
+    <Compile Remove="Forms\ClipBoardDialog.cs" />
+    <Compile Remove="Forms\ClipBoardDialog.Designer.cs" />
+    <Compile Remove="Forms\ColorBox.cs" />
+    <Compile Remove="Forms\ColorBox.Designer.cs" />
+    <Compile Remove="Forms\ConfigDialog.cs" />
+    <Compile Remove="Forms\ConfigDialog.Designer.cs" />
+    <Compile Remove="Forms\DebugConfigDialog.cs" />
+    <Compile Remove="Forms\DebugConfigDialog.Designer.cs" />
+    <Compile Remove="Forms\DebugDialog.cs" />
+    <Compile Remove="Forms\DebugDialog.Designer.cs" />
+    <Compile Remove="Forms\EraPictureBox.cs" />
+    <Compile Remove="Forms\MainWindow.cs" />
+    <Compile Remove="Forms\MainWindow.Designer.cs" />
+    <Compile Remove="Forms\RikaiDialog.cs" />
+    <Compile Remove="Forms\RikaiDialog.Designer.cs" />
+    <Compile Remove="GameData\ConstantData.cs" />
+    <Compile Remove="GameData\DefineMacro.cs" />
+    <Compile Remove="GameData\Expression\CaseExpression.cs" />
+    <Compile Remove="GameData\Expression\ExpressionMediator.cs" />
+    <Compile Remove="GameData\Expression\ExpressionParser.cs" />
+    <Compile Remove="GameData\Expression\IOperandTerm.cs" />
+    <Compile Remove="GameData\Expression\OperatorCode.cs" />
+    <Compile Remove="GameData\Expression\OperatorMethod.cs" />
+    <Compile Remove="GameData\Expression\Term.cs" />
+    <Compile Remove="GameData\Function\Creator.cs" />
+    <Compile Remove="GameData\Function\Creator.Method.cs" />
+    <Compile Remove="GameData\Function\FunctionMethod.cs" />
+    <Compile Remove="GameData\Function\FunctionMethodTerm.cs" />
+    <Compile Remove="GameData\Function\UserDefinedMethodTerm.cs" />
+    <Compile Remove="GameData\Function\UserDefinedRefMethod.cs" />
+    <Compile Remove="GameData\GameBase.cs" />
+    <Compile Remove="GameData\IdentifierDictionary.cs" />
+    <Compile Remove="GameData\ParserMediator.cs" />
+    <Compile Remove="GameData\StrForm.cs" />
+    <Compile Remove="GameData\Variable\CharacterData.cs" />
+    <Compile Remove="GameData\Variable\VariableCode.cs" />
+    <Compile Remove="GameData\Variable\VariableData.cs" />
+    <Compile Remove="GameData\Variable\VariableEvaluator.cs" />
+    <Compile Remove="GameData\Variable\VariableIdentifier.cs" />
+    <Compile Remove="GameData\Variable\VariableLocal.cs" />
+    <Compile Remove="GameData\Variable\VariableParser.cs" />
+    <Compile Remove="GameData\Variable\VariableStrArgTerm.cs" />
+    <Compile Remove="GameData\Variable\VariableTerm.cs" />
+    <Compile Remove="GameData\Variable\VariableToken.cs" />
+    <Compile Remove="GameProc\ErbLoader.cs" />
+    <Compile Remove="GameProc\Function\Argument.cs" />
+    <Compile Remove="GameProc\Function\ArgumentBuilder.cs" />
+    <Compile Remove="GameProc\Function\ArgumentParser.cs" />
+    <Compile Remove="GameProc\Function\BuiltInFunctionCode.cs" />
+    <Compile Remove="GameProc\Function\CircularBuffer.cs" />
+    <Compile Remove="GameProc\Function\Clipboard.cs" />
+    <Compile Remove="GameProc\Function\FunctionArgType.cs" />
+    <Compile Remove="GameProc\Function\FunctionIdentifier.cs" />
+    <Compile Remove="GameProc\Function\Instraction.Child.cs" />
+    <Compile Remove="GameProc\Function\Instruction.cs" />
+    <Compile Remove="GameProc\HeaderFileLoader.cs" />
+    <Compile Remove="GameProc\InputRequest.cs" />
+    <Compile Remove="GameProc\LabelDictionary.cs" />
+    <Compile Remove="GameProc\LogicalLine.cs" />
+    <Compile Remove="GameProc\LogicalLineParser.cs" />
+    <Compile Remove="GameProc\Process.CalledFunction.cs" />
+    <Compile Remove="GameProc\Process.cs" />
+    <Compile Remove="GameProc\Process.ScriptProc.cs" />
+    <Compile Remove="GameProc\Process.State.cs" />
+    <Compile Remove="GameProc\Process.SystemProc.cs" />
+    <Compile Remove="GameProc\UserDefinedFunction.cs" />
+    <Compile Remove="GameProc\UserDefinedVariable.cs" />
+    <Compile Remove="GameView\AConsoleDisplayPart.cs" />
+    <Compile Remove="GameView\ButtonStringCreator.cs" />
+    <Compile Remove="GameView\ConsoleButtonString.cs" />
+    <Compile Remove="GameView\ConsoleDisplayLine.cs" />
+    <Compile Remove="GameView\ConsoleImagePart.cs" />
+    <Compile Remove="GameView\ConsoleShapePart.cs" />
+    <Compile Remove="GameView\ConsoleStyledString.cs" />
+    <Compile Remove="GameView\EmueraConsole.cs" />
+    <Compile Remove="GameView\EmueraConsole.Print.cs" />
+    <Compile Remove="GameView\HtmlManager.cs" />
+    <Compile Remove="GameView\PrintStringBuffer.cs" />
+    <Compile Remove="GameView\Rikaichan.cs" />
+    <Compile Remove="GameView\RikaichanAutogenerated.cs" />
+    <Compile Remove="GameView\StringMeasure.cs" />
+    <Compile Remove="GameView\StringStyle.cs" />
+    <Compile Remove="Sub\EmueraException.cs" />
+    <Compile Remove="Sub\EncodingHandler.cs" />
+    <Compile Remove="Sub\EraBinaryDataReader.cs" />
+    <Compile Remove="Sub\EraBinaryDataWriter.cs" />
+    <Compile Remove="Sub\EraDataStream.cs" />
+    <Compile Remove="Sub\EraStreamReader.cs" />
+    <Compile Remove="Sub\LexicalAnalyzer.cs" />
+    <Compile Remove="Sub\StringStream.cs" />
+    <Compile Remove="Sub\SubWord.cs" />
+    <Compile Remove="Sub\Word.cs" />
+    <Compile Remove="Sub\WordCollection.cs" />
+    <Compile Remove="_Library\EvilMask\ConsoleDivPart.cs" />
+    <Compile Remove="_Library\EvilMask\ConsoleEscapedParts.cs" />
+    <Compile Remove="_Library\EvilMask\Lang.cs" />
+    <Compile Remove="_Library\EvilMask\Shape.cs" />
+    <Compile Remove="_Library\EvilMask\Utils.cs" />
+    <Compile Remove="_Library\GDI.cs" />
+    <Compile Remove="_Library\LangManager.cs" />
+    <Compile Remove="_Library\NAudio_LoopStream.cs" />
+    <Compile Remove="_Library\SFMT.cs" />
+    <Compile Remove="_Library\Sound.NAudio.cs" />
+    <Compile Remove="_Library\Sound.WMP.cs" />
+    <Compile Remove="_Library\Sys.cs" />
+    <Compile Remove="_Library\WebPWrapper.cs" />
+    <Compile Remove="_Library\WinInput.cs" />
+    <Compile Remove="_Library\WinmmTimer.cs" />
+    <EmbeddedResource Remove="Forms\ClipBoardDialog.resx" />
+    <EmbeddedResource Remove="Forms\ColorBox.resx" />
+    <EmbeddedResource Remove="Forms\ConfigDialog.resx" />
+    <EmbeddedResource Remove="Forms\DebugConfigDialog.resx" />
+    <EmbeddedResource Remove="Forms\DebugDialog.resx" />
+    <EmbeddedResource Remove="Forms\EraPictureBox.resx" />
+    <EmbeddedResource Remove="Forms\MainWindow.resx" />
+    <EmbeddedResource Remove="Forms\RikaiDialog.resx" />
+  </ItemGroup>
+</Project>
